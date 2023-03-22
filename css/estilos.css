@@ -1,0 +1,647 @@
+* {
+  padding: 15px;
+  padding-top: 0%;
+}
+
+@font-face {
+  font-family: "roboto-regular";
+  src: url(../fuentes/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "russo-regular";
+  src: url(../fuentes/RussoOne-Regular.ttf);
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.navbar__link {
+  font-size: 37px;
+  color: black;
+  font-family: "russo-regular";
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar__link:hover {
+  background: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.dropdown {
+  display: none;
+}
+
+/* responsive navbar*/
+@media screen and (max-width: 1350px) {
+  nav {
+    padding: 10px;
+  }
+  .navbar__link {
+    font-size: 25px;
+  }
+  .navbar__link:hover {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 938px) {
+  .navbar__link {
+    font-size: 20px;
+  }
+  .navbar__link:hover {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .navbar__link {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+  }
+}
+/*encabezado*/
+#encabezado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-image: url("../recursos/backgraund.img/backgraund-2-recortada.jpg");
+  background-size: cover;
+}
+
+.encabezado__contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.9);
+  border: 5px solid rgb(0, 0, 0);
+}
+
+.encabezado__titulo {
+  font-family: "russo-regular";
+  font-size: 55px;
+  color: rgb(36, 137, 187);
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.encabezado__subtitulo {
+  font-family: "russo-regular";
+  font-size: 20px;
+}
+
+#inicio {
+  border: 35px;
+  padding: 35px;
+}
+
+/*estilos para las tarjetas*/
+.tarjetas__titulo {
+  font-family: "russo-regular";
+  font-size: 30px;
+  color: rgb(36, 137, 187);
+  font-style: italic;
+}
+
+.tarjeta__texto {
+  font-family: "roboto-regular";
+  font-size: 20px;
+  color: black;
+}
+
+.tarjetas__borde {
+  padding: 2px;
+}
+
+.card-img-top {
+  height: 400px;
+  width: 564px;
+  background-size: cover;
+  border: 3px solid black;
+}
+
+.card-body {
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+/*desarrollando el articulo sobre los planes*/
+.planes__titulo {
+  font-family: "russo-regular";
+  font-size: 30px;
+  color: rgb(36, 137, 187);
+}
+
+.planes__lista li {
+  font-family: "roboto-regular";
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.planes__img {
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+}
+
+/*responsive header index*/
+@media screen and (max-width: 1350px) {
+  .encabezado__titulo {
+    font-size: 45px;
+    justify-content: center;
+  }
+  .encabezado__subtitulo {
+    font-size: 18;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .encabezado__subtitulo {
+    font-size: 30px;
+    justify-content: center;
+  }
+  .encabezado__subtitulo {
+    font-size: 15px;
+    justify-content: center;
+  }
+}
+footer {
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+}
+
+.box__footer {
+  background-image: linear-gradient(358.7deg, rgb(42, 136, 157) 1.7%, rgb(122, 197, 214) 51.1%, rgb(211, 232, 242) 95.5%);
+  max-width: 1800px;
+  background-image: linear-gradient(109.6deg, rgb(61, 245, 167) 11.2%, rgb(9, 111, 224) 91.1%);
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  font-family: "roboto regular";
+}
+
+.colunm1__footer {
+  max-width: 600px;
+}
+
+.colunm2__footer {
+  max-width: 600px;
+}
+
+.row2__footer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.row2__footer img {
+  width: 65px;
+  height: 66px;
+  background-size: cover;
+}
+
+.texto__footer {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.colunm3__footer {
+  max-width: 600px;
+}
+
+.row3__footer img {
+  width: 65px;
+  height: 66px;
+  background-size: cover;
+}
+
+.row3__footer {
+  display: flex;
+}
+
+/*responsive footer*/
+@media screen and (max-width: 970px) {
+  .box__footer {
+    flex-wrap: wrap;
+  }
+  .colunm1__footer,
+  .colunm2__footer,
+  .colunm3__footer {
+    margin-top: 40px;
+  }
+}
+/*desarrollando las tarjetas de la pagina de auto*/
+/*trabajando en las flechas del baner*/
+#flechas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+#mainautos {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjetas__contenedor {
+  box-shadow: 0 0 7px #111;
+}
+.tarjetas__contenedor .card {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tarjetas__contenedor .card img {
+  margin-top: 100px;
+  background-size: cover;
+}
+
+.tarjetas__contenedor .peugeout {
+  background-color: #111;
+}
+.tarjetas__contenedor .peugeout img {
+  height: 450;
+  width: 500px;
+}
+
+.tarjetas__contenedor .corolla {
+  background-color: #111;
+}
+.tarjetas__contenedor .corolla img {
+  height: 400px;
+  width: 400px;
+}
+
+.tarjetas__contenedor .hilux {
+  background-color: #111;
+}
+.tarjetas__contenedor .hilux img {
+  height: 350px;
+  width: 430px;
+}
+
+.tarjetas__informacion {
+  height: 80px;
+  width: 100%;
+}
+.tarjetas__informacion h1 {
+  font-family: "russo-regular";
+  font-size: 1.2em;
+  text-align: center;
+  color: rgb(36, 137, 187);
+  margin-bottom: -10px;
+}
+
+.tarjetas__informacion p {
+  text-align: center;
+  font-size: 0.9em;
+  font-family: "roboto-regular";
+  color: black;
+}
+
+.tarjeta__precio {
+  height: 50px;
+  width: 85%;
+  margin: auto;
+  font-family: "roboto-regular";
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.precios__box1 {
+  width: 80px;
+  color: red;
+  font-size: 0.8em;
+}
+
+.precios__box2 {
+  color: #111;
+  font-size: 1.5em;
+}
+
+.img-carrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-carrito img {
+  height: 90px;
+  width: 90px;
+  background-size: cover;
+  text-align: center;
+}
+
+.main__contacto {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form {
+  background-color: rgb(255, 255, 255);
+  padding: 3px;
+}
+.form h1 {
+  font-size: 2rem;
+  font-family: "russo-regular";
+  color: rgb(36, 137, 187);
+  text-align: center;
+}
+.form .form__container {
+  padding: 15px;
+  width: 100%;
+}
+
+svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 22px;
+  width: 22px;
+}
+
+.form__imput {
+  font-size: 22px;
+  font-family: "roboto-regular";
+  border: solid 1px black;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+input[type=text] {
+  font-size: 1.2rem;
+  font-family: "roboto-regular";
+  border: none;
+  margin-left: 10px;
+  width: 80%;
+}
+
+input[type=tel] {
+  font-size: 1.2rem;
+  font-family: "roboto-regular";
+  border: none;
+  margin-left: 10px;
+  width: 80%;
+}
+
+input[type=email] {
+  font-size: 1.2rem;
+  font-family: "roboto-regular";
+  border: none;
+  margin-left: 10px;
+  width: 80%;
+}
+
+input[type=password] {
+  font-size: 1.2rem;
+  font-family: "roboto-regular";
+  border: none;
+  margin-left: 10px;
+  width: 80%;
+}
+
+input[type=submit] {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.4rem;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(36, 137, 187);
+  font-weight: 700;
+}
+
+.boton {
+  margin-top: 20px;
+}
+.boton p {
+  font-size: 1.2rem;
+  font-family: "roboto-regular";
+  text-align: center;
+}
+.boton p a {
+  color: blue;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 767px) {
+  .form {
+    margin: auto;
+    width: 510px;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 25px;
+  }
+}
+.main__nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__nosotros {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  background: #fff;
+  border-radius: 5px;
+  border: 3px solid black;
+  transition: 0.5s;
+}
+
+.card__nosotros:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+  transform: translateY(-15px);
+}
+
+.card__head {
+  height: 110px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.card__head .card__circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #0b6f72;
+  bottom: 0;
+}
+
+.card__img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  bottom: -30%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.card__img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card__descripcion {
+  height: 200px;
+  padding: 40px 20px 20px 20px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.18);
+  text-align: center;
+  margin-top: 0;
+}
+.card__descripcion h2 {
+  color: rgb(36, 137, 187);
+  font-size: 20px;
+  font-family: "russo-regular";
+}
+.card__descripcion h4 {
+  color: rgb(36, 137, 187);
+  font-size: 18px;
+  font-family: "russo-regular";
+}
+.card__descripcion p {
+  color: black;
+  font-size: 15px;
+  font-family: "roboto-regular";
+}
+
+.contacto {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacto a {
+  transition: 0.5s;
+}
+.contacto a img {
+  color: rgb(36, 137, 187);
+  height: 20px;
+  width: 20px;
+  margin-bottom: 10px;
+}
+
+.header__post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header__post h1 {
+  color: rgb(36, 137, 187);
+  font-family: "russo-regular";
+  font-size: 55px;
+}
+.header__post h3 {
+  font-size: 33px;
+}
+
+.texto__post1 {
+  background-image: radial-gradient(circle farthest-corner at 5.6% 54.5%, rgb(47, 71, 79) 0%, rgb(159, 188, 198) 83.6%);
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.texto__post1 h1 {
+  font-size: 35px;
+  font-family: "russo-regular";
+}
+.texto__post1 p {
+  font-size: 25px;
+  font-family: "roboto-regular";
+}
+
+.texto__post2 {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(0, 152, 155) 0.1%, rgb(0, 94, 120) 94.2%);
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.texto__post2 h1 {
+  font-size: 35px;
+  font-family: "russo-regular";
+}
+.texto__post2 p {
+  font-size: 25px;
+  font-family: "roboto-regular";
+}
+
+.texto__post3 {
+  background-image: radial-gradient(circle farthest-corner at 5.6% 54.5%, rgb(47, 71, 79) 0%, rgb(159, 188, 198) 83.6%);
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.texto__post3 h1 {
+  font-size: 35px;
+  font-family: "russo-regular";
+}
+.texto__post3 p {
+  font-size: 25px;
+  font-family: "roboto-regular";
+}
+
+.texto__post4 {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(0, 152, 155) 0.1%, rgb(0, 94, 120) 94.2%);
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.texto__post4 h1 {
+  font-size: 35px;
+  font-family: "russo-regular";
+}
+.texto__post4 p {
+  font-size: 25px;
+  font-family: "roboto-regular";
+}
+
+.img__post img {
+  height: 440px;
+  width: 550px;
+  background-size: cover;
+  border-radius: 50px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

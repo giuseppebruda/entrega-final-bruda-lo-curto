@@ -1,28 +1,36 @@
-
-
 /*encabezado*/
-
 #encabezado{
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 600px;
+    background-image: url("../recursos/backgraund.img/backgraund-2-recortada.jpg");
+    background-size: cover;
 }
+.encabezado__contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128,.9);
+    border: 5px solid rgb(0, 0, 0);
+}
+
 
 .encabezado__titulo{
     font-family: $letra-titulos;
     font-size: 55px;
     color: rgb(36, 137, 187);
     padding: 5px;
+    display: flex;
     justify-content: center;
+
 }
 .encabezado__subtitulo{
     font-family: $letra-titulos;
     font-size: 20px;
-    position: relative;
-    justify-content: center;
-    justify-content: center;
 
 }
  #inicio{
