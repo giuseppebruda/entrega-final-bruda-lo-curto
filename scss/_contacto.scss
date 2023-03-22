@@ -1,0 +1,98 @@
+.main__contacto{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form{
+    background-color: rgb(255, 255, 255);
+    padding: 3px;
+    h1{
+        font-size: 2rem;
+        font-family: $letra-titulos;
+        color: $colo-principal;
+        text-align: center;
+    }
+    .form__container{
+       padding: 15px;
+       width: 100%; 
+    }
+    }
+    svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 22px;
+        width: 22px;
+
+   
+    }
+    .form__imput{
+    font-size: 22px;
+    font-family: $letras-texto;
+    border: solid 1px black;   
+    margin-bottom:15px;
+    padding: 10px;
+    }
+    input[type="text"]{
+        font-size: 1.2rem;
+        font-family: $letras-texto;
+        border: none;
+        margin-left: 10px;
+        width: 80%;
+    }
+    input[type="tel"]{
+        font-size: 1.2rem;
+        font-family: $letras-texto;
+        border: none;
+        margin-left: 10px;
+        width: 80%;
+    }
+    input[type="email"]{
+        font-size: 1.2rem;
+        font-family: $letras-texto;
+        border: none;
+        margin-left: 10px;
+        width: 80%;
+    }
+    input[type="password"]{
+        font-size: 1.2rem;
+        font-family: $letras-texto;
+        border: none;
+        margin-left: 10px;
+        width: 80%;
+    }
+    input[type="submit"]{
+        width: 100%;
+        padding: 15px;
+        font-size: 1.4rem;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+    }
+    input[type="submit"]:hover{
+        background-color: $colo-principal;
+        font-weight: 700;
+    }
+.boton{
+    margin-top: 20px;
+    p{
+        font-size: 1.2rem;
+        font-family: $letras-texto;
+        text-align: center;
+        a{
+            color: blue;
+            text-decoration: none;
+
+        }
+    }
+}
+@media screen and (min-width: 767px) {
+.form{
+    margin: auto;
+    width: 510px;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 25px;
+}
+}

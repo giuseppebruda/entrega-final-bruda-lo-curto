@@ -1,0 +1,98 @@
+
+
+/*encabezado*/
+
+#encabezado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.encabezado__titulo{
+    font-family: $letra-titulos;
+    font-size: 55px;
+    color: rgb(36, 137, 187);
+    padding: 5px;
+    justify-content: center;
+}
+.encabezado__subtitulo{
+    font-family: $letra-titulos;
+    font-size: 20px;
+    position: relative;
+    justify-content: center;
+    justify-content: center;
+
+}
+ #inicio{
+    border: 35px;
+    padding: 35px;
+ }
+
+ /*estilos para las tarjetas*/
+.tarjetas__titulo{
+    font-family: $letra-titulos;
+    font-size: 30px;
+    color:  rgb(36, 137, 187);
+    font-style: italic;
+}
+
+
+.tarjeta__texto{
+    font-family: $letras-texto;
+    font-size: 20px;
+    color: black;
+
+}
+.tarjetas__borde{
+    padding: 2px;
+}
+.card-img-top{
+    height: 400px;
+    width: 564px;
+    background-size: cover;
+    border: 3px solid black;
+}
+.card-body{
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;}
+/*desarrollando el articulo sobre los planes*/
+.planes__titulo{
+    font-family: $letra-titulos;
+    font-size: 30px;
+    color: rgb(36, 137, 187);
+}
+.planes__lista li{
+font-family: $letras-texto;
+font-size: 20px;
+list-style-type: none;
+}
+.planes__img{
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+/*responsive header index*/
+@media screen and (max-width: 1350px){
+    .encabezado__titulo{
+        font-size: 45px;
+        justify-content: center;
+    }
+    .encabezado__subtitulo{
+        font-size: 18;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 750px){
+    .encabezado__subtitulo{
+        font-size: 30px;
+        justify-content: center;
+    }
+    .encabezado__subtitulo{
+        font-size: 15px;
+        justify-content: center;
+    }
+}

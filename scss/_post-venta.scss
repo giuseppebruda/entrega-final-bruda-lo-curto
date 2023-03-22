@@ -1,0 +1,90 @@
+.header__post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        color: $colo-principal;
+        font-family: $letra-titulos;
+        font-size: 55px;
+    }
+    h3{
+        font-size: 33px;
+    }
+}
+.texto__post1{
+    background-image: radial-gradient( circle farthest-corner at 5.6% 54.5%,  rgba(47,71,79,1) 0%, rgba(159,188,198,1) 83.6% );
+height: 440px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-radius: 50px;
+h1{
+    font-size: 35px;
+    font-family: $letra-titulos;
+}
+p{
+    font-size: 25px;
+    font-family: $letras-texto;
+}
+}
+.texto__post2{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% );
+    height: 440px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-radius: 50px;
+h1{
+    font-size: 35px;
+    font-family: $letra-titulos;
+}
+p{
+    font-size: 25px;
+    font-family: $letras-texto;
+}
+}
+.texto__post3{
+    background-image: radial-gradient( circle farthest-corner at 5.6% 54.5%,  rgba(47,71,79,1) 0%, rgba(159,188,198,1) 83.6% );
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    h1{
+        font-size: 35px;
+        font-family: $letra-titulos;
+    }
+    p{
+        font-size: 25px;
+        font-family: $letras-texto;
+    }
+}
+.texto__post4{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% );
+    height: 440px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-radius: 50px;
+h1{
+    font-size: 35px;
+    font-family: $letra-titulos;
+}
+p{
+    font-size: 25px;
+    font-family: $letras-texto;
+}
+}
+.img__post{
+img{
+    height: 440px;
+    width: 550px;
+    background-size: cover;
+    border-radius: 50px;
+}
+}

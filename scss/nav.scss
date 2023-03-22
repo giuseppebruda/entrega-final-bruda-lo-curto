@@ -1,0 +1,54 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+.navbar__link{
+    font-size: 37px;
+    color: black;
+    font-family: "russo-regular";
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer}
+
+.navbar__link:hover{
+    background: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 30px;
+}
+.dropdown{
+    display: none;
+}
+
+/* responsive navbar*/
+@media screen and (max-width: 1350px){
+    nav{
+    padding: 10px;
+    }
+    .navbar__link{
+        font-size: 25px;
+    }
+    .navbar__link:hover{
+        font-size: 25px;
+    }
+    }
+    
+    @media screen and (max-width: 938px){
+    .navbar__link{
+        font-size: 20px;
+    }
+    .navbar__link:hover{
+        font-size: 20px;
+    }
+    }
+    @media screen and (max-width: 750px){
+    .navbar__link{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    }

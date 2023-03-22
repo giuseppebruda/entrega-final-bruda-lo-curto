@@ -1,0 +1,13 @@
+
+$letra-titulos: "russo-regular";
+$letras-texto: "roboto-regular";
+$colo-principal: rgb(36, 137, 187);
+
+@font-face {
+    font-family: "roboto-regular";
+    src: url(../fuentes/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "russo-regular";
+    src: url(../fuentes/RussoOne-Regular.ttf);
+}

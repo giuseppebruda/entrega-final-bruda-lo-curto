@@ -1,0 +1,104 @@
+/*desarrollando las tarjetas de la pagina de auto*/
+
+/*trabajando en las flechas del baner*/
+#flechas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    
+}
+#mainautos{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tarjetas__contenedor{
+    box-shadow: 0 0 7px #111;
+    .card{
+        height: 200px;
+        width: 100%;
+        margin-bottom: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+        margin-top: 100px;
+            background-size: cover;
+        }
+
+    }
+}
+.tarjetas__contenedor{
+    .peugeout{
+        background-color: #111;
+        img{ height: 450;
+        width: 500px; ;       }
+    }
+}
+.tarjetas__contenedor{
+    .corolla{
+        background-color: #111;
+        img{height: 400px;
+        width: 400px;}
+    }
+}
+.tarjetas__contenedor{
+    .hilux{
+        background-color: #111;
+        img{
+            height: 350px;
+            width: 430px;
+        }
+    }
+}
+.tarjetas__informacion{
+    height: 80px;
+    width: 100%;
+    h1{
+font-family: $letra-titulos;
+font-size: 1.2em;
+text-align: center;
+color: $colo-principal;
+margin-bottom: -10px;
+    }
+}
+.tarjetas__informacion{
+    p{
+        text-align: center;
+        font-size: .9em;
+        font-family: $letras-texto;
+        color: black;
+    }
+}
+.tarjeta__precio{
+    height: 50px;
+    width: 85%;
+    margin: auto;
+    font-family: $letras-texto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.precios__box1{
+    width: 80px;
+    color: red;
+    font-size: .8em;
+}
+.precios__box2{
+    color: #111;
+    font-size: 1.5em;
+}
+
+.img-carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      height: 90px;
+      width: 90px;
+      background-size: cover;
+      text-align: center;
+    }
+}
