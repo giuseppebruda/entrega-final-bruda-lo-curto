@@ -1,3 +1,13 @@
+/*pagina armada usando funciones sass*/
+@mixin tarjeta($backgraund){
+background-image: $backgraund;
+height: 440px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-radius: 50px
+}
 .header__post{
     display: flex;
     flex-direction: column;
@@ -13,13 +23,7 @@
     }
 }
 .texto__post1{
-    background-image: radial-gradient( circle farthest-corner at 5.6% 54.5%,  rgba(47,71,79,1) 0%, rgba(159,188,198,1) 83.6% );
-height: 440px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-border-radius: 50px;
+@include tarjeta(radial-gradient( circle farthest-corner at 5.6% 54.5%,  rgba(47,71,79,1) 0%, rgba(159,188,198,1) 83.6% ));
 h1{
     font-size: 35px;
     font-family: $letra-titulos;
@@ -30,13 +34,7 @@ p{
 }
 }
 .texto__post2{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% );
-    height: 440px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-border-radius: 50px;
+@include tarjeta(radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% ));
 h1{
     font-size: 35px;
     font-family: $letra-titulos;
@@ -47,13 +45,7 @@ p{
 }
 }
 .texto__post3{
-    background-image: radial-gradient( circle farthest-corner at 5.6% 54.5%,  rgba(47,71,79,1) 0%, rgba(159,188,198,1) 83.6% );
-    height: 440px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
+    @extend .texto__post1;
     h1{
         font-size: 35px;
         font-family: $letra-titulos;
@@ -64,13 +56,7 @@ p{
     }
 }
 .texto__post4{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% );
-    height: 440px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-border-radius: 50px;
+@extend .texto__post2;
 h1{
     font-size: 35px;
     font-family: $letra-titulos;

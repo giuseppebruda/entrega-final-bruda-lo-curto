@@ -550,6 +550,7 @@ input[type=submit]:hover {
   margin-bottom: 10px;
 }
 
+/*pagina armada usando funciones sass*/
 .header__post {
   display: flex;
   flex-direction: column;
@@ -565,7 +566,7 @@ input[type=submit]:hover {
   font-size: 33px;
 }
 
-.texto__post1 {
+.texto__post1, .texto__post3 {
   background-image: radial-gradient(circle farthest-corner at 5.6% 54.5%, rgb(47, 71, 79) 0%, rgb(159, 188, 198) 83.6%);
   height: 440px;
   display: flex;
@@ -574,16 +575,16 @@ input[type=submit]:hover {
   justify-content: center;
   border-radius: 50px;
 }
-.texto__post1 h1 {
+.texto__post1 h1, .texto__post3 h1 {
   font-size: 35px;
   font-family: "russo-regular";
 }
-.texto__post1 p {
+.texto__post1 p, .texto__post3 p {
   font-size: 25px;
   font-family: "roboto-regular";
 }
 
-.texto__post2 {
+.texto__post2, .texto__post4 {
   background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(0, 152, 155) 0.1%, rgb(0, 94, 120) 94.2%);
   height: 440px;
   display: flex;
@@ -592,24 +593,15 @@ input[type=submit]:hover {
   justify-content: center;
   border-radius: 50px;
 }
-.texto__post2 h1 {
+.texto__post2 h1, .texto__post4 h1 {
   font-size: 35px;
   font-family: "russo-regular";
 }
-.texto__post2 p {
+.texto__post2 p, .texto__post4 p {
   font-size: 25px;
   font-family: "roboto-regular";
 }
 
-.texto__post3 {
-  background-image: radial-gradient(circle farthest-corner at 5.6% 54.5%, rgb(47, 71, 79) 0%, rgb(159, 188, 198) 83.6%);
-  height: 440px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-}
 .texto__post3 h1 {
   font-size: 35px;
   font-family: "russo-regular";
@@ -619,15 +611,6 @@ input[type=submit]:hover {
   font-family: "roboto-regular";
 }
 
-.texto__post4 {
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(0, 152, 155) 0.1%, rgb(0, 94, 120) 94.2%);
-  height: 440px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-}
 .texto__post4 h1 {
   font-size: 35px;
   font-family: "russo-regular";
