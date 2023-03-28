@@ -176,16 +176,39 @@ nav {
     font-size: 15px;
     justify-content: center;
   }
+  #encabezado {
+    background-image: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  #encabezado {
+    background-image: none;
+    text-align: center;
+    height: 400px;
+  }
+  .card-img-top {
+    width: 270px;
+    height: 270px;
+    border: none;
+  }
+  .card-body {
+    border: 3px solid black;
+  }
+  .encabezado__titulo {
+    font-size: 30px;
+  }
+  .encabezado__subtitulo {
+    font-size: 15px;
+  }
 }
 footer {
   background-color: rgb(255, 255, 255);
-  padding: 40px;
+  padding: 10px;
 }
 
 .box__footer {
   background-image: linear-gradient(358.7deg, rgb(42, 136, 157) 1.7%, rgb(122, 197, 214) 51.1%, rgb(211, 232, 242) 95.5%);
-  max-width: 1800px;
-  background-image: linear-gradient(109.6deg, rgb(61, 245, 167) 11.2%, rgb(9, 111, 224) 91.1%);
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   margin: auto;
@@ -236,10 +259,48 @@ footer {
   .box__footer {
     flex-wrap: wrap;
   }
-  .colunm1__footer,
   .colunm2__footer,
   .colunm3__footer {
-    margin-top: 40px;
+    margin-top: 20px;
+    padding: 0%;
+  }
+  .titulos__footer {
+    font-size: 22px;
+    text-align: center;
+  }
+  .texto__footer {
+    font-size: 18px;
+    text-align: center;
+  }
+  .colunm1__footer {
+    display: none;
+  }
+}
+@media screen and (max-width: 470px) {
+  .box__footer {
+    flex-wrap: wrap;
+  }
+  .colunm2__footer,
+  .colunm3__footer {
+    margin-top: 10px;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 5px;
+  }
+  .titulos__footer {
+    font-size: 20px;
+    text-align: center;
+  }
+  .texto__footer {
+    font-size: 15px;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+  }
+  .colunm1__footer {
+    display: none;
   }
 }
 /*desarrollando las tarjetas de la pagina de auto*/

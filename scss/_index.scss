@@ -103,4 +103,29 @@ list-style-type: none;
         font-size: 15px;
         justify-content: center;
     }
+    #encabezado{
+        background-image: none;
+    }
+}
+@media screen and (max-width: 450px){
+#encabezado{
+    background-image: none;
+    text-align: center;
+    height: 400px;
+}
+.card-img-top{
+    width: 270px;
+    height: 270px;
+    border: none;
+}
+.card-body{
+    border: 3px solid black;
+}
+.encabezado__titulo{
+    font-size: 30px;
+}
+.encabezado__subtitulo{
+    font-size: 15px;
+}
+
 }
