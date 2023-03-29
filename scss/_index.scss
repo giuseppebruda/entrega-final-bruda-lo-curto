@@ -123,9 +123,26 @@ list-style-type: none;
 }
 .encabezado__titulo{
     font-size: 30px;
+    text-align: center;
 }
 .encabezado__subtitulo{
     font-size: 15px;
 }
-
+.tarjeta__texto{
+    font-size: 15px;
+    text-align: center;
+}
+.tarjetas__titulo{
+    font-size: 30px;
+    text-align: center;
+}
+.planes__lista{
+    li{
+        font-size: 15px;
+    }
+}
+.planes__img{
+    width: 300px;
+    height: 300px;
+}
 }

@@ -196,9 +196,25 @@ nav {
   }
   .encabezado__titulo {
     font-size: 30px;
+    text-align: center;
   }
   .encabezado__subtitulo {
     font-size: 15px;
+  }
+  .tarjeta__texto {
+    font-size: 15px;
+    text-align: center;
+  }
+  .tarjetas__titulo {
+    font-size: 30px;
+    text-align: center;
+  }
+  .planes__lista li {
+    font-size: 15px;
+  }
+  .planes__img {
+    width: 300px;
+    height: 300px;
   }
 }
 footer {
@@ -339,7 +355,7 @@ footer {
   background-color: #111;
 }
 .tarjetas__contenedor .peugeout img {
-  height: 450;
+  height: 450px;
   width: 500px;
 }
 
@@ -411,6 +427,53 @@ footer {
   text-align: center;
 }
 
+/*responsive*/
+@media screen and (max-width: 1397px) {
+  .tarjetas__contenedor .peugeout {
+    background-color: #111;
+  }
+  .tarjetas__contenedor .peugeout img {
+    height: 300px;
+    width: 400px;
+  }
+  .tarjetas__contenedor .corolla {
+    background-color: #111;
+  }
+  .tarjetas__contenedor .corolla img {
+    height: 300px;
+    width: 300px;
+  }
+  .tarjetas__contenedor .hilux {
+    background-color: #111;
+  }
+  .tarjetas__contenedor .hilux img {
+    height: 550px;
+    width: 380px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .tarjetas__contenedor .peugeout {
+    background-color: #111;
+  }
+  .tarjetas__contenedor .peugeout img {
+    height: 300px;
+    width: 330px;
+  }
+  .tarjetas__contenedor .corolla {
+    background-color: #111;
+  }
+  .tarjetas__contenedor .corolla img {
+    height: 300px;
+    width: 270px;
+  }
+  .tarjetas__contenedor .hilux {
+    background-color: #111;
+  }
+  .tarjetas__contenedor .hilux img {
+    height: 550px;
+    width: 280px;
+  }
+}
 .main__contacto {
   margin: 0;
   padding: 0;
@@ -529,6 +592,7 @@ input[type=submit]:hover {
   height: 400px;
   background: #fff;
   border-radius: 5px;
+  margin-top: 20px;
   border: 3px solid black;
   transition: 0.5s;
 }
@@ -576,7 +640,7 @@ input[type=submit]:hover {
   padding: 40px 20px 20px 20px;
   border-bottom: solid 1px rgba(0, 0, 0, 0.18);
   text-align: center;
-  margin-top: 0;
+  margin-top: 15px;
 }
 .card__descripcion h2 {
   color: rgb(36, 137, 187);
@@ -603,14 +667,35 @@ input[type=submit]:hover {
 }
 .contacto a {
   transition: 0.5s;
+  color: black;
 }
 .contacto a img {
-  color: rgb(36, 137, 187);
+  color: black;
   height: 20px;
   width: 20px;
-  margin-bottom: 10px;
 }
 
+/*responsive*/
+@media screen and (max-width: 1200px) {
+  .card__nosotros {
+    position: relative;
+    width: 450px;
+    height: 400px;
+  }
+  .card__descripcion p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1015px) {
+  .card__nosotros {
+    position: relative;
+    width: 380px;
+    height: 380px;
+  }
+  .card__descripcion p {
+    font-size: 10px;
+  }
+}
 /*pagina armada usando funciones sass*/
 .header__post {
   display: flex;

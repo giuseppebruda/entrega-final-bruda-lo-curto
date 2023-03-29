@@ -33,7 +33,7 @@
 .tarjetas__contenedor{
     .peugeout{
         background-color: #111;
-        img{ height: 450;
+        img{ height: 450px;
         width: 500px; ;       }
     }
 }
@@ -100,5 +100,56 @@ margin-bottom: -10px;
       width: 90px;
       background-size: cover;
       text-align: center;
+    }
+}
+/*responsive*/
+@media screen and (max-width: 1397px){
+    .tarjetas__contenedor{
+        .peugeout{
+            background-color: #111;
+            img{ height: 300px;
+            width: 400px; ;       }
+        }
+    }
+    .tarjetas__contenedor{
+        .corolla{
+            background-color: #111;
+            img{height: 300px;
+            width: 300px;}
+        }
+    }
+    .tarjetas__contenedor{
+        .hilux{
+            background-color: #111;
+            img{
+                height: 550px;
+                width: 380px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px){
+    .tarjetas__contenedor{
+        .peugeout{
+            background-color: #111;
+            img{ height: 300px;
+            width: 330px; ;       }
+        }
+    }
+    .tarjetas__contenedor{
+        .corolla{
+            background-color: #111;
+            img{height: 300px;
+            width: 270px;}
+        }
+    }
+    .tarjetas__contenedor{
+        .hilux{
+            background-color: #111;
+            img{
+                height: 550px;
+                width: 280px;
+            }
+        }
     }
 }
