@@ -707,9 +707,11 @@ input[type=submit]:hover {
   color: rgb(36, 137, 187);
   font-family: "russo-regular";
   font-size: 55px;
+  text-align: center;
 }
 .header__post h3 {
   font-size: 33px;
+  text-align: center;
 }
 
 .texto__post1, .texto__post3 {
@@ -724,6 +726,7 @@ input[type=submit]:hover {
 .texto__post1 h1, .texto__post3 h1 {
   font-size: 35px;
   font-family: "russo-regular";
+  text-align: center;
 }
 .texto__post1 p, .texto__post3 p {
   font-size: 25px;
@@ -771,6 +774,84 @@ input[type=submit]:hover {
   width: 550px;
   background-size: cover;
   border-radius: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .responsive h1 {
+    font-size: 25px;
+  }
+  .responsive p {
+    font-size: 20px;
+  }
+  .header__post h1 {
+    font-size: 50px;
+  }
+  .header__post h3 {
+    font-size: 30px;
+  }
+  .img__post img {
+    height: 420px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 979px) {
+  .responsive h1 {
+    font-size: 20px;
+  }
+  .responsive p {
+    font-size: 17px;
+  }
+  .header__post h1 {
+    font-size: 40px;
+  }
+  .header__post h3 {
+    font-size: 20px;
+  }
+  .img__post img {
+    height: 410px;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .responsive h1 {
+    font-size: 20px;
+  }
+  .responsive p {
+    font-size: 17px;
+  }
+  .header__post h1 {
+    font-size: 40px;
+  }
+  .header__post h3 {
+    font-size: 20px;
+  }
+  .img__post img {
+    height: 420px;
+    width: 320px;
+  }
+}
+@media screen and (max-width: 439px) {
+  .responsive h1 {
+    font-size: 18px;
+  }
+  .responsive p {
+    font-size: 15px;
+  }
+  .header__post h1 {
+    font-size: 25px;
+  }
+  .header__post h3 {
+    font-size: 20px;
+  }
+  .img__post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img__post img {
+    height: 320px;
+    width: 240px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
