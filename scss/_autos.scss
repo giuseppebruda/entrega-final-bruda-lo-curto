@@ -5,8 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
-    
+    margin-top: 25px;   
 }
 #mainautos{
     height: 100vh;
@@ -33,8 +32,8 @@
 .tarjetas__contenedor{
     .peugeout{
         background-color: #111;
-        img{ height: 450px;
-        width: 500px; ;       }
+        img{ height: 400px;
+        width: 400px; ;       }
     }
 }
 .tarjetas__contenedor{
@@ -100,6 +99,13 @@ margin-bottom: -10px;
       width: 90px;
       background-size: cover;
       text-align: center;
+      transition: 1s;
+    }
+}
+.img-carrito:hover{
+    img{
+        height: 120px;
+        width: 120px;
     }
 }
 /*responsive*/

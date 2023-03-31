@@ -25,6 +25,18 @@ nav {
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: 1s;
+}
+
+.img__nav img {
+  height: 100px;
+  width: 120px;
+  transition: 1s;
+}
+
+.img__nav:hover img {
+  height: 150px;
+  width: 170px;
 }
 
 .navbar__link:hover {
@@ -355,8 +367,8 @@ footer {
   background-color: #111;
 }
 .tarjetas__contenedor .peugeout img {
-  height: 450px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
 }
 
 .tarjetas__contenedor .corolla {
@@ -425,6 +437,12 @@ footer {
   width: 90px;
   background-size: cover;
   text-align: center;
+  transition: 1s;
+}
+
+.img-carrito:hover img {
+  height: 120px;
+  width: 120px;
 }
 
 /*responsive*/
@@ -502,6 +520,7 @@ svg {
   flex-direction: column;
   height: 22px;
   width: 22px;
+  z-index: 1;
 }
 
 .form__imput {
@@ -510,9 +529,11 @@ svg {
   border: solid 1px black;
   margin-bottom: 15px;
   padding: 10px;
+  text-align: center;
 }
 
 input[type=text] {
+  text-align: center;
   font-size: 1.2rem;
   font-family: "roboto-regular";
   border: none;
@@ -521,6 +542,7 @@ input[type=text] {
 }
 
 input[type=tel] {
+  text-align: center;
   font-size: 1.2rem;
   font-family: "roboto-regular";
   border: none;
@@ -529,6 +551,7 @@ input[type=tel] {
 }
 
 input[type=email] {
+  text-align: center;
   font-size: 1.2rem;
   font-family: "roboto-regular";
   border: none;
@@ -537,6 +560,7 @@ input[type=email] {
 }
 
 input[type=password] {
+  text-align: center;
   font-size: 1.2rem;
   font-family: "roboto-regular";
   border: none;
@@ -545,6 +569,7 @@ input[type=password] {
 }
 
 input[type=submit] {
+  text-align: center;
   width: 100%;
   padding: 15px;
   font-size: 1.4rem;
