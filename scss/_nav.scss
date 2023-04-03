@@ -26,6 +26,13 @@ img{
     width: 170px;
 }
 }
+//animacion
+.img__nav{
+    animation-name: flit;
+    animation-duration: 3s;
+    animation-delay: 1s;
+
+}
 
 
 .navbar__link:hover{

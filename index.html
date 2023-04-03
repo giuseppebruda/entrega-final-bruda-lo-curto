@@ -7,6 +7,8 @@
     <!--SEO-->
     <meta name="description" content="Diamond Car es una plataforma en línea para la compra y venta de vehículos, que ofrece herramientas de búsqueda personalizadas, financiamiento, seguros y servicios adicionales. Proporciona información detallada sobre los automóviles, así como comparaciones de precios y reseñas de usuarios para ayudar a los compradores a tomar decisiones informadas.">
     <meta name="keywords" content="AUTOS USADOS, AUTOS NUEVOS, 0KM, CONSECIONARIO, BUENOS AIRES, ARGENTINA, CABA">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="./recursos/logos/favicom.png" type="image/x-icon">
     <link rel="stylesheet" href="https://kit.fontawesome.com/a24dbd5e9b.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./bootstrap/bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
@@ -29,7 +31,7 @@
         </ul>
         </div>
         <!--navbar escritorio-->
-        <a class="img__nav" href="./index.html"><img src="./recursos/logos/diamante-logo.png" alt="logo empresa" width="100px">
+        <a class="img__nav animate__animated animate__flip" href="./index.html"><img src="./recursos/logos/diamante-logo.png" alt="logo empresa" width="100px">
         </a>
         <a class="navbar__link" href="./paginas/autos.html">autos</a>
         <a class="navbar__link" href="./paginas/nosotros.html">nosotros</a>
@@ -37,7 +39,7 @@
         <a class="navbar__link" href="./paginas/post-venta.html">post venta</a>
     </nav>
     <section id="encabezado">
-        <div class="encabezado__contenido">
+        <div data-aos="zoom-in" data-aos-mirror="true" data-aos-once="false" class="encabezado__contenido">
         <!--titulo-->
         <div class="encabezado__container">
         <h1 class="encabezado__titulo">Diamond Car</h1>
@@ -91,16 +93,16 @@
     <div class="container text-center">
         <div class="row">
             <div class="col">
-                <h2 class="planes__titulo">Todo a la vista, un plan de ahorro 100% transparente</h2>
-        <ul class="planes__lista">
+                <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="planes__titulo">Todo a la vista, un plan de ahorro 100% transparente</h2>
+        <ul data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="planes__lista">
             <li>planes de 84 y 120 cuotas</li>
             <li>tomamos tu usado como parte de pago</li>
             <li>beneficios exclusivos para PyMes</li>
         </ul>
-        <a href="./paginas/contacto.html" class="btn btn-secondary btn-lg btn-block">ir a contacto...</a>
+        <a href="./paginas/contacto.html" data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="btn btn-secondary btn-lg btn-block">ir a contacto...</a>
             </div>
         <div class="col">
-            <img class="planes__img" src="./recursos/autos/llaves.jpg" alt="llaves.autos"width="300px">
+            <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="planes__img" src="./recursos/autos/llaves.jpg" alt="llaves.autos"width="300px">
             </div>
         </div>
     </div>
@@ -154,5 +156,9 @@
     </div> 
     </footer>
     <script src="./bootstrap/bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>    

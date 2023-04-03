@@ -39,6 +39,12 @@ nav {
   width: 170px;
 }
 
+.img__nav {
+  animation-name: flit;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
 .navbar__link:hover {
   background: black;
   color: white;
@@ -169,6 +175,12 @@ nav {
 }
 
 /*responsive header index*/
+@media screen and (max-width: 1550px) {
+  .card-img-top {
+    width: 440px;
+    height: 280px;
+  }
+}
 @media screen and (max-width: 1350px) {
   .encabezado__titulo {
     font-size: 45px;
@@ -177,6 +189,10 @@ nav {
   .encabezado__subtitulo {
     font-size: 18;
     justify-content: center;
+  }
+  .card-img-top {
+    width: 367px;
+    height: 300px;
   }
 }
 @media screen and (max-width: 750px) {

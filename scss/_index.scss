@@ -83,6 +83,13 @@ list-style-type: none;
 }
 
 /*responsive header index*/
+@media screen and (max-width: 1550px){
+
+    .card-img-top{
+        width: 440px;
+        height: 280px;}
+}
+
 @media screen and (max-width: 1350px){
     .encabezado__titulo{
         font-size: 45px;
@@ -92,7 +99,11 @@ list-style-type: none;
         font-size: 18;
         justify-content: center;
     }
+    .card-img-top{
+        width: 367px;
+        height: 300px;}
 }
+
 @media screen and (max-width: 750px){
     .encabezado__subtitulo{
         font-size: 30px;
